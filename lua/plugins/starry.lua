@@ -3,7 +3,7 @@ local config = {
   hide_eob = true, -- Hide end of buffer
   italics = {
     comments = true, -- Italic comments
-    strings = false, -- Italic strings
+    strings = true, -- Italic strings
     keywords = false, -- Italic keywords
     functions = false, -- Italic functions
     variables = false -- Italic variables
@@ -27,7 +27,7 @@ local config = {
   },
 
   style = {
-    name = 'moonlight', -- Theme style name (moonlight, earliestsummer, etc.)
+    name = 'dracula', -- Theme style name (moonlight, earliestsummer, etc.)
     -- " other themes: dracula, oceanic, dracula_blood, 'deep ocean', darker, palenight, monokai, mariana, emerald, middlenight_blue
     disable = {},  -- a list of styles to disable, e.g. {'bold', 'underline'}
     fix = true,
