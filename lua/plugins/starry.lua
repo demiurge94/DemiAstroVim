@@ -27,13 +27,13 @@ local config = {
   },
 
   style = {
-    name = 'dracula', -- Theme style name (moonlight, earliestsummer, etc.)
+    name = 'dracula_blood', -- Theme style name (moonlight, earliestsummer, etc.)
     -- " other themes: dracula, oceanic, dracula_blood, 'deep ocean', darker, palenight, monokai, mariana, emerald, middlenight_blue
     disable = {},  -- a list of styles to disable, e.g. {'bold', 'underline'}
     fix = true,
     darker_contrast = false, -- More contrast for darker style
     daylight_swith = false, -- Enable day and night style switching
-    deep_black = false, -- Enable a deeper black background
+    deep_black = true, -- Enable a deeper black background
   },
 
   custom_colors = {
@@ -50,7 +50,8 @@ return {
 -- see example setup below
 vim.g.starry_italic_comments = true
 end,
-  config = config
+  config = config,
+  lazy= false
 }
 
 
