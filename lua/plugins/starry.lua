@@ -17,7 +17,7 @@ local config = {
 
   text_contrast = {
     lighter = false, -- Higher contrast text for lighter style
-    darker = false -- Higher contrast text for darker style
+    darker = true -- Higher contrast text for darker style
   },
 
   disable = {
