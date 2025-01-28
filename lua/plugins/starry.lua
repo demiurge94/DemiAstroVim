@@ -1,6 +1,7 @@
 local config = {
   border = false, -- Split window borders
   hide_eob = true, -- Hide end of buffer
+
   italics = {
     comments = true, -- Italic comments
     strings = true, -- Italic strings
@@ -21,7 +22,7 @@ local config = {
   },
 
   disable = {
-    background = false, -- true: transparent background
+    background = true, -- true: transparent background
     term_colors = false, -- Disable setting the terminal colors
     eob_lines = false -- Make end-of-buffer lines invisible
   },
