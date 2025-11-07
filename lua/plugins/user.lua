@@ -1,5 +1,3 @@
--- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
 local doom = {
@@ -14,7 +12,7 @@ local doom = {
   "   ░       ░  ░       ░    ░        ░   ░         ░   ",
   " ░                                 ░                  ",
   "                                                      ",
-  " Powered by AstroVim                                  "
+  " Powered by AstroVim                                  ",
 }
 local capybara = {
   "⠀⠀⠀⠀⣠⠖⠉⠁⣯⢀⠈⠒⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
@@ -29,7 +27,7 @@ local capybara = {
   "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⢨⠻⣄⣮⡯⠁⠀⢇⠀⠀⠀⠀⠀⠀⠀⠀⠸",
   "⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⡎⡇⠀⠔⠑⢄⠀⠈⠲⡀⠀⠀⠀⠀⠀⡠⠃",
   "⠀⠀⠀⠀⠀⠀⠀⠰⠻⡭⢠⡧⠃⢸⠀⠀⢀⠩⠷⠓⠚⡇⢀⣀⡠⠔⠁ ",
-  "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠙⠛⠋⠀⠀⠹⠷⠒⠈⠉⠀"
+  "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠙⠛⠋⠀⠀⠹⠷⠒⠈⠉⠀",
 }
 ---@type LazySpec
 return {
@@ -81,7 +79,16 @@ return {
       luasnip.filetype_extend("javascript", { "javascriptreact" })
     end,
   },
-
+  -- This table merges new options into the nvim-lspconfig plugin
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      -- This adds "copilot" to the list of servers lspconfig will manage
+      servers = {
+        copilot = {},
+      },
+    },
+  },
   {
     "windwp/nvim-autopairs",
     config = function(plugin, opts)

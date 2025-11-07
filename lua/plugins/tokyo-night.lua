@@ -3,7 +3,7 @@ return {
   lazy = false,
   opts = {
     custom_highlights = {
-      Idnetifier = { fg = '#ff4797'}
-    }
-  }
+      Identifier = { fg = "#ff4797" },
+    },
+  },
 }

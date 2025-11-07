@@ -1,7 +1,7 @@
 return {
   -- 1. Add the colorscheme plugin
   {
-    'ray-x/starry.nvim',
+    "ray-x/starry.nvim",
     lazy = false,
     priority = 1000, -- Make sure it loads first
     init = function()
@@ -19,7 +19,7 @@ return {
         strings = true, -- Italic strings
         keywords = false, -- Italic keywords
         functions = false, -- Italic functions
-        variables = false -- Italic variables
+        variables = false, -- Italic variables
       },
 
       contrast = { -- Select which windows get the contrast background
@@ -30,17 +30,17 @@ return {
 
       text_contrast = {
         lighter = false, -- Higher contrast text for lighter style
-        darker = true -- Higher contrast text for darker style
+        darker = true, -- Higher contrast text for darker style
       },
 
       disable = {
         background = true, -- true: transparent background
         term_colors = false, -- Disable setting the terminal colors
-        eob_lines = false -- Make end-of-buffer lines invisible
+        eob_lines = false, -- Make end-of-buffer lines invisible
       },
 
       style = {
-        name = 'dracula_blood', -- Theme style name (moonlight, earliestsummer, etc.)
+        name = "middlenight_blue", -- Theme style name (moonlight, earliestsummer, etc.)
         -- " other themes: dracula, oceanic, dracula_blood, 'deep ocean', darker, palenight, monokai, mariana, emerald, middlenight_blue
         disable = {}, -- a list of styles to disable, e.g. {'bold', 'underline'}
         fix = true,
@@ -50,13 +50,12 @@ return {
       },
 
       custom_colors = {
-        variable = '#f797d7',
+        variable = "#f797d7",
       },
       custom_highlights = {
-        LineNr = { fg = '#777777' },
-        Idnetifier = { fg = '#ff4797' },
-      }
+        LineNr = { fg = "#777777" },
+        Idnetifier = { fg = "#ff4797" },
+      },
     },
   },
-
 }

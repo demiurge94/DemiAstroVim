@@ -68,5 +68,18 @@ return {
         -- ["<C-S>"] = false,
       },
     },
+    lsp = {
+      servers = {
+        "copilot", -- This line MUST be here
+        -- Add your other servers
+        "lua_ls",
+        "yamlls",
+        "rust_analyzer",
+        "svelte",
+        "ts_ls",
+        "eslint",
+        "clangd",
+      },
+    },
   },
 }
